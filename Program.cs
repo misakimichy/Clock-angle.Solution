@@ -13,8 +13,9 @@ namespace ClockAngle
       Console.WriteLine("What is the minute?");
       int minuteInput = int.Parse(Console.ReadLine());
 
-      float result = Clock.ReturnDegree(hourInput, minuteInput);
-      Console.WriteLine("The degrees between the hour and minute is " + result + " degrees.");
+      Clock inputDegree = new Clock();
+      float result = inputDegree.ReturnDegree(hourInput, minuteInput);
+      Console.WriteLine($"The degrees between hour and minute hands is {result} degrees.");
     } 
   }
 }
